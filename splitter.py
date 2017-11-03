@@ -55,11 +55,12 @@ for file in glob.glob("*.avi"):
 
     for n in range(0, chunk_count):
 
-        if n == 0: 
-            chunk_start = 0
-        else:
-            chunk_start = chunk_length * n
-
+        #if n == 0: 
+        #    chunk_start = 0
+        #else:
+        #    chunk_start = chunk_length * n
+        chunk_start = chunk_length * n
+        
         # output filename
         output_name = output_dir + file_prefix + '_' + str(n).zfill(3) + '.' + file_extension
 
